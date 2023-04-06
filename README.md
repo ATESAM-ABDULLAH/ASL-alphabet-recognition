@@ -1,5 +1,5 @@
 ## PACKAGES
-```
+```python
 pip install mediapipe 
 pip install tensorflow
 #Only protobuf=3.20.3 satisfys both mediapipe=0.9.2.1 and tensorflow=2.12.0
