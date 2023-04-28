@@ -10,3 +10,7 @@ pip intall tensorflow
 
 ## DATASET
 A-Z, SPACE, DELETE, NOTHING: https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download
+
+## PRETRAINED MODELS
+### HDF5
+- [V1](./Model/Modelv1_hdf5)
