@@ -12,5 +12,7 @@ pip intall tensorflow
 A-Z, SPACE, DELETE, NOTHING: https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download
 
 ## PRETRAINED MODELS
-### HDF5
-- [V1](./Model/Modelv1_hdf5)
+### V1
+- [HDF5](./Model/Modelv1_hdf5)
+- [Tensorflow saved model](./Model/Modelv1_sm)
+- [Tensorflow Lite](./Model/Modelv1_tflite.tflite)
