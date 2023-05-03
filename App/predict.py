@@ -12,7 +12,7 @@ model_dir = "Saved_models/Modelv1_sm"
 model = keras.models.load_model(model_dir)
 
 # Predict func
-def predict_img(img:'png'):
+def predict_img(img:"numpy.ndarray")->"Char,Accuracy":
     img = cv2.resize(img, (32,32))                #resize image 
 
     np_X = np.array(img)                          #Convert to numpy array
@@ -27,11 +27,11 @@ def predict_img(img:'png'):
 
     return  char, accuracy
 
-# Predict
-img_dir = "Data/asl_alphabet_test/A_test.jpg"
+# # Predict
+# img_dir = "Data/asl_alphabet_test/A_test.jpg" #img directpry
 
-img = cv2.imread(img_dir)   #read image in folder->png image
+# img = cv2.imread(img_dir)   #read image in folder-> numpy array
 
-a,b = predict_img(img)      # Predict img
+# a,b = predict_img(img)      # Predict img
 
-print(f"\nChar:{a} ,Accuracy:{b}% ")
+# print(f"\nChar:{a} ,Accuracy:{b}% ")
