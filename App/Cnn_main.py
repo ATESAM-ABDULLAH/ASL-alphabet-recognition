@@ -8,7 +8,7 @@ Mapping = {0: 'R', 1: 'Z', 2: 'nothing', 3: 'X', 4: 'D', 5: 'I', 6: 'E', 7: 'del
            , 9: 'K', 10: 'Q', 11: 'B', 12: 'G', 13: 'J', 14: 'Y', 15: 'V', 16: 'M', 17: 'P'
            , 18: 'A', 19: 'space', 20: 'H', 21: 'F', 22: 'T', 23: 'W', 24: 'S', 25: 'U', 26: 'C'
            , 27: 'L', 28: 'N'}
-model_dir = "Saved_models/Cnn/Modelv1_sm"
+model_dir = "Saved_models/Modelv1_sm"
 model = keras.models.load_model(model_dir)
 
 # Predict func
