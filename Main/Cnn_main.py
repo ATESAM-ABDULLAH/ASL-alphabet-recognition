@@ -4,11 +4,8 @@ import numpy as np
 from tensorflow import keras
 
 # Constants
-Mapping = {0: 'R', 1: 'Z', 2: 'nothing', 3: 'X', 4: 'D', 5: 'I', 6: 'E', 7: 'del', 8: 'O'
-           , 9: 'K', 10: 'Q', 11: 'B', 12: 'G', 13: 'J', 14: 'Y', 15: 'V', 16: 'M', 17: 'P'
-           , 18: 'A', 19: 'space', 20: 'H', 21: 'F', 22: 'T', 23: 'W', 24: 'S', 25: 'U', 26: 'C'
-           , 27: 'L', 28: 'N'}
-model_dir = "Saved_models/Modelv1_sm"
+Mapping = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E', 5: 'F', 6: 'G', 7: 'H', 8: 'I', 9: 'J', 10: 'K', 11: 'L', 12: 'M', 13: 'N', 14: 'O', 15: 'P', 16: 'Q', 17: 'R', 18: 'S', 19: 'T', 20: 'U', 21: 'V', 22: 'W', 23: 'X', 24: 'Y', 25: 'Z', 26: 'del', 27: 'nothing', 28: 'space'}
+model_dir = "Saved_models/Model_sm"
 model = keras.models.load_model(model_dir)
 
 # Predict func
