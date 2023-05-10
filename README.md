@@ -25,12 +25,12 @@ Incase of downloading data from Kaggle:
 ---
 ## Model Architecture
 
-The model architecture used for this project is a CNN with 3 convolutional layers, each followed by a max-pooling layer and a batch normalization layer. The output of the final max-pooling layer is flattened and fed into two dense layers, with the final dense layer having 29 units (one for each class). The activation function used in all layers is ReLU, except for the final dense layer, which uses softmax. The model was trained for 15 epochs using the Adam optimizer, with a batch size of 32 and a learning rate of 0.001.
+The model architecture used for this project is a CNN with **3 convolutional layers**, **each followed by a max-pooling layer and a batch normalization layer**. The **output of the final max-pooling layer** is flattened and fed into two dense layers, with the **final dense layer having 29 units** (one for each class). The activation function used in all layers is ReLU, except for the final dense layer, which uses softmax. The model was trained for **15 epochs** using the **Adam optimizer**, with a **batch size of 32** and a **learning rate of 0.001**.
 
 ---
 ## Results
 
-The trained model achieved an accuracy of approximately 99.77% on the test set. The model can correctly recognize hand gestures corresponding to the ASL alphabet, as well as the SPACE, DELETE, and NOTHING classes. The model can be further improved by using data augmentation techniques, such as rotation, translation, and scaling of the input images.
+The trained model achieved an accuracy of approximately **99.77% on the test set**. The model can correctly recognize hand gestures corresponding to the ASL alphabet, as well as the SPACE, DELETE, and NOTHING classes. The model can be further improved by using data augmentation techniques, such as rotation, translation, and scaling of the input images.
 
 ---
 ## Usage
