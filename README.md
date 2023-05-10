@@ -2,20 +2,37 @@
 
 This project aims to recognize the American Sign Language (ASL) alphabet using a convolutional neural network (CNN) model built with TensorFlow. The recognition of these gestures can help people with hearing and speech disabilities to communicate more effectively.
 
+### REPORT
+- [Pdf](./Main/Report.pdf)
+- [Latex](./Main/Latex)
+### Presentation
+- [Pdf]()
+### Video
+---
 ## Dataset
 
-The dataset used for this project is the ASL Alphabet Dataset from Kaggle, which can be downloaded from https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download.
+The dataset used for this project is the ASL Alphabet Dataset from Kaggle, which can be downloaded from https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download
 
 The dataset contains approximately 87,000 images of the ASL alphabet, each with a corresponding label indicating the letter represented in the image. The images are 200x200 pixels, and there are 29 classes in total, with 26 classes for the letters A-Z and 3 classes for SPACE, DELETE, and NOTHING. The inclusion of these three classes is particularly helpful for real-time applications and classification. The model can use the DELETE and SPACE classes to delete a letter and add a space, respectively, while the NOTHING class can help the model recognize when no gesture is being made.
 
+Incase of downloading data from Kaggle:
+```markdown
+1. Rename data directory to "Data"
+2. Rename both inner directory in "Data" to 1 and 2
+3. Move sub-directories in "1" and "2" up into "Data"
+4. Delete directory "1" and "2"
+```
+---
 ## Model Architecture
 
 The model architecture used for this project is a CNN with 3 convolutional layers, each followed by a max-pooling layer and a batch normalization layer. The output of the final max-pooling layer is flattened and fed into two dense layers, with the final dense layer having 29 units (one for each class). The activation function used in all layers is ReLU, except for the final dense layer, which uses softmax. The model was trained for 15 epochs using the Adam optimizer, with a batch size of 32 and a learning rate of 0.001.
 
+---
 ## Results
 
 The trained model achieved an accuracy of approximately 99.77% on the test set. The model can correctly recognize hand gestures corresponding to the ASL alphabet, as well as the SPACE, DELETE, and NOTHING classes. The model can be further improved by using data augmentation techniques, such as rotation, translation, and scaling of the input images.
 
+---
 ## Usage
 
 To use the model, first install the required packages by running the following command in the terminal:
@@ -24,7 +41,13 @@ To use the model, first install the required packages by running the following c
 pip install -r requirements.txt
 ```
 
-After installing the required packages, you can load the trained model from the saved model file using the following code:
+After installing the required packages, you can run the App by running the following commanda in terminal:
+```bash
+cd Main
+python App.py
+```
+
+Or, you can load the trained model from the saved model file using the following code:
 
 ```python
 from tensorflow.keras.models import load_model
@@ -56,12 +79,8 @@ char = Mapping[pred_index]                    #map index to character
 accuracy = pred[0][pred_index]*100            #accuracy/confidece of prediction
 
 ```
-
-## Conclusion
-
-This project demonstrates the effectiveness of CNN models in recognizing hand gestures corresponding to the ASL alphabet. The trained model can be used to build real-time applications for ASL translation, which can benefit people with hearing and speech disabilities.
-
+---
 ## PRETRAINED MODELS
-- [HDF5](./Saved_models/Modelv1_hdf5)
-- [Tensorflow saved model](./Saved_models/Modelv1_sm)
-- [Tensorflow Lite](./Saved_models/Modelv1_tflite.tflite)
+- [HDF5](./Saved_models/Model_hdf5)
+- [Tensorflow saved model](./Saved_models/Model_sm)
+- [Tensorflow Lite](./Saved_models/Model_tflite.tflite)
