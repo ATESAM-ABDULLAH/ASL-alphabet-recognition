@@ -3,15 +3,17 @@
 This project aims to recognize the American Sign Language (ASL) alphabet using a convolutional neural network (CNN) model built with TensorFlow. The recognition of these gestures can help people with hearing and speech disabilities to communicate more effectively.
 
 ### REPORT
-- [Pdf](./Main/Report.pdf)
-- [Latex](./Main/Latex)
+- [Pdf](./Main/Report/Report.pdf)
+- [Latex](./Main/Report/Latex)
 ### Presentation
-- [Pdf]()
+- [Pdf](./Main/Presentation/Ai211-Project%20ppt.pdf)
+- [Pptx](./Main/Presentation/Presentation.pptx)
 ### Video
----
+- [Link](https://www.youtube.com/watch?v=isFboKuhec4)
+
 ## Dataset
 
-The dataset used for this project is the ASL Alphabet Dataset from Kaggle, which can be downloaded from https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download
+The dataset used for this project is the ASL Alphabet Dataset from Kaggle, which can be downloaded from (https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download)
 
 The dataset contains approximately 87,000 images of the ASL alphabet, each with a corresponding label indicating the letter represented in the image. The images are 200x200 pixels, and there are 29 classes in total, with 26 classes for the letters A-Z and 3 classes for SPACE, DELETE, and NOTHING. The inclusion of these three classes is particularly helpful for real-time applications and classification. The model can use the DELETE and SPACE classes to delete a letter and add a space, respectively, while the NOTHING class can help the model recognize when no gesture is being made.
 

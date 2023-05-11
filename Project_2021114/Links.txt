@@ -1,3 +1,0 @@
-Overleaf: https://www.overleaf.com/read/bwpffskstbkr
-Github: https://github.com/ATESAM-ABDULLAH/Sign_Language_Model
-Dataset: https://www.kaggle.com/datasets/grassknoted/asl-alphabet?resource=download
