@@ -10,7 +10,6 @@ model = keras.models.load_model(model_dir)
 
 # Predict func
 def predict_img(img:"numpy.ndarray")->"Char,Accuracy":
-    img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)   #make img greyscale
     img = cv2.resize(img, (32,32))                #resize image 
 
     np_X = np.array(img)                          #Convert to numpy array
